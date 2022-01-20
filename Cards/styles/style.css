@@ -1,0 +1,145 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card, .card4{
+    width:18rem;
+    margin-top: 1rem;
+    margin-left:15rem;
+    margin-bottom:1rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+    height: max-content;
+    outline: none;
+    border-radius: 0.8rem;
+    border: 1px solid red;
+    background: #f8edeb;
+    box-shadow: 1rem 1.2rem 1.2rem brown;
+}
+.card5{
+    width:18rem;
+    margin-left:3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+    height: max-content;
+    outline: none;
+    border-radius: 0.8rem;
+    border: 1px solid red;
+    background: #f8edeb;
+    box-shadow: 1rem 1.2rem 1.2rem brown;
+
+}
+img{
+    width:100%;
+    height:auto;
+
+}
+
+h2{
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+h3{
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 490;
+}
+.city{
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+
+}
+.text{
+    margin-top: 0.5rem;
+    margin-left: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 1rem;
+    /*  */
+}
+
+.text p, .text4 p{
+    color: blueviolet;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button{
+    /* margin-left:auto; */
+    background:#f8edeb;
+
+}
+
+i.fas{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    color: brown;
+    margin-left:auto;
+
+}
+
+button:hover, .btns button:hover{
+    background: gray;
+    border-radius: 2rem;
+}
+/* -------card4--------*/
+
+.text4{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+/* -------card5--------*/
+.btns{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    /*  */
+}
+
+.btns button i{
+    font-size: 1rem;
+    margin-left: auto;
+    color: brown;
+    padding: 0.5rem 1rem;
+}
+
+/* //card6 */
+.card6{
+    width:20rem;
+    margin-left:3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+        overflow: hidden;
+    /* padding: 1rem; */
+    height: max-content;
+    outline: none;
+    border-radius: 0.8rem;
+    border: 1px solid red;
+    background: #f8edeb;
+    box-shadow: 1rem 1.2rem 1.2rem brown;
+}
+
+.image-text{
+    display: flex;
+}
+
+.image-text img{
+    width: 40%;
+    height: 40%;
+}
+.text2 h2, .text2 h3{
+    margin-left: 1rem;
+}

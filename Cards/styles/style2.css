@@ -1,0 +1,51 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    position: relative;
+}
+
+.card2{
+    width:18rem;
+    margin-left:3rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    /* padding: 1rem; */
+    outline: none;
+    height: max-content;
+    border-radius: 0.8rem;
+    border: 1px solid red;
+    background: #f8edeb;
+    box-shadow: 1rem 1.2rem 1.2rem brown;
+}
+
+.city1{
+    position: absolute;
+    right:72%;
+    bottom: 18.5%;
+    color: white;
+}
+/* ------------------------------- */
+.card3{
+    width: 18rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+    outline: none;
+    height: max-content;
+    border-radius: 0.6rem;
+    border: 1px solid saddlebrown;
+    background: #f8edeb;
+    box-shadow: 1rem 1.2rem 1.2rem brown;
+}
+
+.city2 h3{
+    margin-bottom: 1rem;
+}
+/* ------------------------------- */
