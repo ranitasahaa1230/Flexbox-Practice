@@ -1,0 +1,75 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans';
+    cursor: pointer;
+}
+.card{
+    width:22rem;
+    margin: 2rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+    outline: none;
+    border-radius: 0.8rem;
+    border: 1px solid saddlebrown;
+    background: #f8edeb;
+}
+
+img{
+    width: 100%;
+    height:100%;
+
+}
+
+h2{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+h3{
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 490;
+}
+.city{
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.text{
+    margin-top: 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+    /*  */
+
+    /* align-items: center; */
+}
+
+.text p{
+    color: blueviolet;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button{
+    margin-left:2rem;
+    background:#f8edeb;
+
+}
+
+i.fas{
+    font-size: 1rem;
+    padding: 0.3rem;
+    
+}
+
+button:hover{
+    background: grey;
+    border-radius: 2rem;
+}
