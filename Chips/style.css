@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: Roboto, sans-serif;
+}
+div{
+    width:0 auto;
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid violet;
+
+}
+mat-label{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+p{
+    font-size: 1.2rem;
+    color:brown;
+}
+
+.chips{
+    border: 2px solid gray;
+    padding: 0.5rem;
+}
+
+mat-chip,i{
+    padding: 0.2em;
+    margin: 0.2rem;
+    border-radius:2.5rem;
+}
+
+mat-chip{
+    background: gray;
+    padding: 0.5em;
+}
+
+i{
+    color: black;
+}
+
+mat-chip:nth-child(3){
+    background: violet;
+}
+
+mat-chip:nth-child(4){
+    background: blueviolet;
+}
