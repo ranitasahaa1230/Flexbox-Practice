@@ -6,49 +6,64 @@
 html {
   font-family: Roboto, sans-serif;
 }
-div{
-    width:0 auto;
-    margin: 2rem;
-    padding: 1rem;
-    border: 2px solid violet;
-
+body{
+   margin: 3rem;
+    height: 100vh;
+    font-weight: 500;
 }
-mat-label{
-    display: flex;
-    justify-content: flex-start;
-    margin: 0.5rem;
-    font-size: 1.2rem;
-    flex-wrap: wrap;
-}
-p{
-    font-size: 1.2rem;
+section{
     color:brown;
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chips_container{
+    display: flex;
+    border-bottom: 2px solid red;
+    width: 50%;
+    flex-wrap: wrap;
 }
 
 .chips{
-    border: 2px solid gray;
-    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
 }
 
-mat-chip,i{
-    padding: 0.2em;
-    margin: 0.2rem;
-    border-radius:2.5rem;
+.chip{
+    padding: 0.75rem;
+    background-color: rgba(29, 201, 201, 0.507);
+    border-radius: 1rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
 }
 
-mat-chip{
-    background: gray;
-    padding: 0.5em;
+.chip:hover{
+    background-color: rgba(128, 128, 128, 0.719);
+    transition: 0.2s;
 }
 
-i{
+.chip p{
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.chip i{
+    cursor: pointer;
     color: black;
 }
 
-mat-chip:nth-child(3){
-    background: violet;
-}
-
-mat-chip:nth-child(4){
-    background: blueviolet;
+input{
+    outline: none;
+    border: none;
+    flex: 1;
+    min-width: 100px;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
