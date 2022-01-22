@@ -9,7 +9,6 @@ const badge=document.querySelector(".badge4")
 //     }
 // })
 
-
 // button.addEventListener('click',()=>{
 //     if(badge.dataset.toggle==="0"){
 //         badge.style.visibility="hidden";
