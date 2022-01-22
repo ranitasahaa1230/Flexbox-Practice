@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snackbar</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+  />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <main>
+    <aside class="snackbar">
+        <button class="baseline">Baseline</button>
+        <button class="leading">Leading</button>
+        <button class="stacked">Stacked</button>
+      </aside>
+      <div class="baseline">
+        <span>Whoops! Something went wrong there...</span>
+        <section class="cta">
+          <button>RETRY</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+      <div class="leading">
+        <span>You've ordered 100 pizzas! Enjoy!</span>
+        <section class="cta">
+          <button>UNDO</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+      <div class="stacked">
+        <span
+          >Looks like you already placed this order, please confirm if you want to repeat this
+          again?
+        </span>
+        <section class="cta">
+          <button>REPEAT</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+      </main>
+      
+      <script src="./script.js"></script>
 </body>
 </html>
