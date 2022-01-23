@@ -8,29 +8,24 @@ html {
 }
 body{
    margin: 3rem;
-    height: 100vh;
+   height: 100vh;
     font-weight: 500;
-}
-section{
-    color:brown;
-    padding: 2rem;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .chips_container{
     display: flex;
+    flex-direction: column;
+    color: brown;
+    font-size: 2rem;
+    margin:2rem;
     border-bottom: 2px solid red;
-    width: 50%;
-    flex-wrap: wrap;
+
 }
 
 .chips{
     display: flex;
     flex-wrap: wrap;
+    width: auto;
     margin: 0.5rem 0;
 }
 
@@ -44,7 +39,7 @@ section{
 }
 
 .chip:hover{
-    background-color: rgba(128, 128, 128, 0.719);
+    background-color: rgba(190, 16, 16, 0.719);
     transition: 0.2s;
 }
 
@@ -60,7 +55,7 @@ section{
 
 input{
     outline: none;
-    border: none;
+    border:none;
     flex: 1;
     min-width: 100px;
     font-size: 1.5rem;
