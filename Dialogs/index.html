@@ -15,25 +15,31 @@
     <title>Dialogs</title>
   </head>
   <body>
+    <h1>Dialogs</h1>
+
     <main>
-      <div class="alert">
-        <button id="open-alert">Open Alert Dialog</button>
+      <div class="alert-btn">
+        <div class="alert">
+          <button id="open-alert">Open Alert Dialog</button>
+        </div>
+        <div class="alert">
+          <button id="open-simple">Open Simple Dialog</button>
+        </div>
+        <div class="alert">
+          <button id="open-confirmation">Open Confirmation Dialog</button>
+        </div>
       </div>
-      <div class="alert">
-        <button id="open-simple">Open Simple Dialog</button>
-      </div>
-      <div class="alert">
-        <button id="open-confirmation">Open Confirmation Dialog</button>
-      </div>
+
       <div class="modal-container">
         <section class="modal-alert">
           <h2>Dialog header</h2>
-          <p>Dialog text</p>
+          <p>Dialog body text</p>
           <footer class="modal-footer">
             <button id="close-alert">Action 1</button>
             <button id="close-alert">Action 2</button>
           </footer>
         </section>
+
         <section class="modal-simple">
           <h2>Dialog header</h2>
           <hr />
@@ -51,6 +57,7 @@
             </ul>
           </div>
         </section>
+
         <section class="modal-confirmation">
           <h2>Dialog header</h2>
           <hr />
@@ -81,8 +88,10 @@
             <button id="close-conf-alert">Action 2</button>
           </footer>
         </section>
+
       </div>
     </main>
+
     <script
       src="https://kit.fontawesome.com/0ae1aebe6f.js"
       crossorigin="anonymous"

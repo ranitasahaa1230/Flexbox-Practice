@@ -8,14 +8,147 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  /* display: flex; */
+  margin: 1rem;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+h1{
+  color:brown;
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+.alert-btn{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 50vh; */
+  margin-top: 15rem;
+ 
 }
+#open-alert, #open-simple, #open-confirmation{
+  border: none;
+  color: aliceblue;
+  background:#0077b6;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.modal-alert,.modal-simple,.modal-confirmation{
+  display: none;
+  border: 3px solid #0077b6;
+  margin: 1rem;
+  padding: 1rem;
+  width: 18rem;
+  border-radius: 1.2rem;
 
+}
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
-  padding: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+}
+p{
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+footer{
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  justify-content: flex-end;
+}
+#close-alert,#close-conf-alert{
+  padding:0.2rem;
+  margin: 0.2rem;
+  border: none;
+  color: #0077b6;
+  background: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+#close-alert:hover, #close-conf-alert:hover{
+  background: rgb(228, 163, 163);
+}
+
+ul{
+  list-style: none;
+}
+
+span{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+i{
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+.nav-item>span:hover{
+  background: rgb(228, 163, 163);
+
+}
+input{
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.radio-item{
+  padding: 0.5rem;
+}
+.modal_confirmation-items {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+hr{
+  margin: 0.8rem;
+}
+span > input[type="radio"] {
+  display: none;
+}
+span > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+
+span > input[type="radio"]:checked + *::before {
+  background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+  border-color: teal;
+}
+/* span > input[type="radio"]:checked + * {
+  color: teal;
+} */
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s ease-in-out;
 }
