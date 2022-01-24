@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -6,47 +6,92 @@
   padding: 0;
 }
 h2{
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
     color: blueviolet;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .container-drawer{
     display: flex;
     justify-content: space-between;
     border: 2px solid saddlebrown;
     margin: auto;
-    width: 50%;
-    height: 450px;
-    /* padding: 1.2rem; */
-    overflow-y: scroll;
+    width: 70%;
+    /* max-height: 30rem; 
+    position: relative;
+    /* overflow-x: hidden;
+    
 }
-.drawer{
-    height: 350px;
-    overflow-y: scroll;
-    width: 15%;
+  .drawer {
+    /* min-width: 15rem; */
+    /* overflow-y: auto; */
+    /* transition: 250ms; */
+    /* min-height: 100%; 
+  }
 
-}
-ul{
-    list-style: none;
-
-}
-.drawer-header{
-    margin: 1rem;
+  .drawer-header {
+    position: sticky;
+    top: 0;
+    padding-bottom: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .drawer-header h3 {
+    font-size: 2rem;
+  }
+  .drawer-header p {
     font-size: 1.2rem;
-}
+  }
 
-button{
-    /* margin: 1rem; */
+  .drawer-item {
+    margin: 0.6rem 0.8rem;
+    min-width: 12rem;
+    text-align: left;
+    color: #003049;
     border: none;
     outline: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background: white;
-    margin: 0.8rem;
-}
-i{
+  }
+  .drawer-item:focus {
+    background-color:gray;
+    color: #003049;
+  }
+  i {
     margin-right: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    color: black;
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  /* .nested-items {
+    margin-left: 2rem;
+    overflow-y: hidden;
+    height: 0;
+  } */
+  /*.show-items {
+    height: auto;
+  }
+ 
+  .hide-menu {
+    display: none;
+  }
+  .drawer-modal {
+    position: absolute;
+  }
+  .blur-main {
+    background-color: var(--gray-font-medium);
+    overflow-y: hidden;
+  } */
+
+
+/* ul{
+    list-style: none;
+    /* height: 30rem; */
+    /* overflow-y: scroll; 
+    height: 272px;
+    overflow-x: hidden;
 
 }
 
@@ -55,13 +100,83 @@ i{
   background: #003049;
   color: white;
   outline: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 article{
     margin: 1rem;
     font-size: 1rem;
 }
 
-/* main{
+main {
     overflow-y: scroll;
-} */
+    height: 360px;
+    flex-grow: 1;
+}*/ 
+
+.container-drawer {
+  margin: 2rem;
+  border: 3px inset purple;
+  max-width: 80rem;
+  max-height: 40rem;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+.drawer {
+  padding: 1.5rem;
+  min-width: 22rem;
+  box-shadow: pink;
+  overflow-y: auto;
+  transition: 250ms;
+  /* background-color: yellow; */
+  min-height: 100%;
+}
+.drawer-header {
+  position: sticky;
+  top: 0;
+  padding-bottom: 1rem;
+  background-color:green;
+}
+.drawer-header h3 {
+  font-size: 2.2rem;
+}
+.drawer-header p {
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+.drawer-item {
+  margin: 1rem;
+  min-width: 12rem;
+  text-align: left;
+  /* color: yellowgreen; */
+}
+.drawer-item:focus {
+  background-color: peru;
+  color:wheat;
+}
+.drawer-item i {
+  margin-right: 1.5rem;
+}
+.nested-items {
+  margin-left: 2rem;
+  overflow-y: hidden;
+  height: 0;
+}
+.show-items {
+  height: auto;
+}
+main {
+  overflow-y: scroll;
+  max-height: 100%;
+  flex-grow: 1;
+}
+.hide-menu {
+  display: none;
+}
+.drawer-modal {
+  position: absolute;
+}
+.blur-main {
+  background-color:skyblue;
+  overflow-y: hidden
+}

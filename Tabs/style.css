@@ -1,16 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-html {
-  font-family: Roboto, sans-serif;
-}
-.tab::-webkit-scrollbar {
-    display: none;
-  }
 
   h1{
     color:#0081a7;
@@ -21,21 +19,24 @@ html {
     margin-top: 4rem;
   }
 
-.scroll-tab,
 .tab {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 5rem auto;
   position:relative;
+  max-width: 610px;
+
 }
-div.scroll-tab{
+.tab.scroll{
     overflow-x: scroll;
-  /* white-space: nowrap; */
-  /* margin: 0.5rem; */
-  max-width: 100%
-    /* scrollbar-width: none;
-  scroll-behavior: smooth; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 75%;
+  margin: 0 auto;
+}
+.tab.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -46,25 +47,48 @@ a {
   cursor: pointer;
   border: 2px solid whitesmoke;
   display: inline-block;
+}
+.tab-link{
+  width: calc(100% / 4);
+  text-transform: uppercase;
 
 }
+
+.btn-tab-scroll {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+
 a:hover {
   background:#e0aaff;
   border: 1px solid white;
   border-radius: 2px;
 }
-a:focus{
+/* a:focus{
     border-bottom:4px solid #0081a7;
-}
-/* .slider {
+} */
+.slidder,.slider-scroll{
   background: #0081a7;
   bottom: 0;
-  display: block;
   height: 5px;
   position: absolute;
-  transition: left 0.4s ease-out;
+  transition: all 100ms linear;
   width: 5rem;
-  /* width: calc(100% / 4); */
-/* } */
+  
+}
 
+.slidder{
+  width: calc(100% / 4);
+}
 
+.slider-scroll{
+    width: 100px;
+}
+
+.active {
+  background-color: #e9ddf9;
+  color: #6200ee;
+  border-radius: 5px 5px 0 0;
+  transition: all 100ms linear;
+}
