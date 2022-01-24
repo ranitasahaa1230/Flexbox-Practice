@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h2{
+    margin: 2rem;
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.container-drawer{
+    display: flex;
+    border: 2px solid saddlebrown;
+    width: 0 auto;
+}
