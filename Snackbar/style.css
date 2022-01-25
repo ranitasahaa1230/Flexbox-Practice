@@ -3,15 +3,98 @@
   margin: 0;
   padding: 0;
 }
+.snackbar-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5rem;
+  position: relative;
+}
+.snackbar-btns button{
+  padding: 1rem;
+  margin: 0.5rem;
+  background: blueviolet;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
 
-main{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin:2rem;
 }
 
-button{
-    background: violet;
-    padding: 1.2rem;
+.baseline, .leading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  width:28%;
+  background: rgb(8, 6, 6);
+  height: 3rem;
+  color: white;
+  border-radius: 1rem;
+
+}
+.baseline{
+  display: none;
+  position: fixed;
+  bottom:0;
+  left: 30%;
+}
+.leading{
+  position: fixed;
+  display: none;
+  bottom:0;
+  left:0;
+}
+.stacked{
+  display: none;
+  position: fixed;
+  bottom:0;
+  left: 30%;
+}
+
+span{
+  margin: 1rem;
+  font-size: 1rem;
+
+}
+.baseline button, .leading button, .stacked button{
+  color: blueviolet;
+  border: none;
+  background: rgb(8, 6, 6);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.stacked{
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 1rem auto;
+  width:32%;
+  background: rgb(8, 6, 6);
+  height: 6rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+/* .align{
+  display: flex;
+} */
+.stacked .cta{
+  display: flex;
+  margin-left: auto;
+} 
+
+i{
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+i:hover{
+  background: gray;
+}
+.loop.show {
+  opacity: 1;
+  pointer-events: auto;
 }
