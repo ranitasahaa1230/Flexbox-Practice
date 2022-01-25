@@ -37,7 +37,12 @@ html {
 }
 .tab.scroll::-webkit-scrollbar {
   display: none;
+    /* //Remove scrollbar space  */ 
+    width: 0;  
+    /* Optional: just make scrollbar invisible */
+    background: transparent; 
 }
+
 
 a {
   text-decoration: none;
@@ -68,7 +73,7 @@ a:hover {
 /* a:focus{
     border-bottom:4px solid #0081a7;
 } */
-.slidder,.slider-scroll{
+ .slidder,.slider-scroll{
   background: #0081a7;
   bottom: 0;
   height: 5px;
