@@ -54,7 +54,6 @@ function getChips(e){
         chipsForm.reset();
     }
 }
-
 // chips.addEventListener("click", (e) => {
 //     if (
 //       e.target.classList.contains("fas") &&
@@ -63,7 +62,6 @@ function getChips(e){
 //       e.target.parentElement.remove();
 //     }
 //   });
-
 chips.addEventListener("click",(e)=>{
     if(e.target.classList.contains("fa-times")){
         e.target.parentElement.remove();
