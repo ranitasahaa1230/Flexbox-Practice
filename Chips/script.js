@@ -45,7 +45,6 @@ const createChip=(chipss)=>{
     const chipTemplate=`<div class="chip"><p>${chipss}</p><i class="fas fa-times"></i></div>`;
     chips.innerHTML += chipTemplate;
 }
-
 function getChips(e){
     e.preventDefault();
     const chip1=chipInput.value;
